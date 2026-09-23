@@ -231,7 +231,7 @@ function esc(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&l
 function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2400)}
 
 async function api(action,payload={},method="POST"){
-  if(CONFIG.DEMO_MODE||!CONFIG.API_URL||CONFIG.API_URL.includes("PASTE_URL")){
+  if(CONFIG.DEMO_MODE||!CONFIG.API_URL||CONFIG.API_URL.includes("https://script.google.com/macros/s/AKfycbyOnew1LWrOilaJduhyxUEvvxCwixWZKgx24iUFvu9jyLb0np_Ez-AHZQ_eS5zdztDC/exec")){
     return demo(action,payload);
   }
 
