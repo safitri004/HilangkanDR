@@ -220,7 +220,7 @@ async function api(action,payload={},method="POST"){
     try{
       data=JSON.parse(text);
     }catch(e){
-      throw Error("Respons Apps Script tidak berupa JSON. Pastikan deployment menggunakan Web app dan URL /exec.");
+      throw Error("https://script.google.com/macros/s/AKfycbzibLYOWN80BeLkM1YWl2IGPYh7IUOYNWgcblkrEvv_7NQB1g-Tpc8TsoYagpr1I9WmIA/exec.");
     }
 
     if(!r.ok || data.success===false){
